@@ -1,6 +1,10 @@
 /**
  * Site header
  */
+ li{
+    list-style-type: none;
+ }
+
 .site-header {
     border-top: 5px solid $grey-color-dark;
     border-bottom: 1px solid $grey-color-light;
@@ -105,6 +109,24 @@
 .social-media-list {
     list-style: none;
     margin-left: 0;
+    float: right;
+    li{
+        padding: 10px 0 0 10px;
+        display: inline-block; 
+        span{ color: #d2d2d2; }
+    }
+}
+
+.fa-google-plus-square{
+    &:hover{
+        color: #dd4b39;
+    }
+}
+
+.fa-github-square{
+    &:hover{
+        color: #333333;
+    }
 }
 
 .footer-col-wrapper {
