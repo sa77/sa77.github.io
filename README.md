@@ -1,7 +1,7 @@
 sa77.github.io
 ==============
 
-just a test site..trying out jekyll
+jekyll powered static blog
 
-[here's the link](http://sa77.github.io/ "Homepage_link")
+[link](http://sa77.github.io/ "Homepage")
 

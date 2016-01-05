@@ -1,12 +1,11 @@
 # Site settings
-title: Another face in the crowd !!
+title: Just another face in the crowd
 email: sa77
 description: > # this means to ignore newlines until "baseurl:"
   Some description.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://yourdomain.com" # the base hostname & protocol for your site
 github_username:  sa77
-google_plus_username: +SandeepAcharya77
 
 # Build settings
 markdown: kramdown
