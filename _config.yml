@@ -1,11 +1,13 @@
 # Site settings
-title: Just another face in the crowd
+title: Sandeep's Blog
 email: sa77
-description: > # this means to ignore newlines until "baseurl:"
-  Some description.
+description: Just another jekyll blog
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://yourdomain.com" # the base hostname & protocol for your site
 github_username:  sa77
 
 # Build settings
 markdown: kramdown
+
+gems:
+- jekyll-feed
