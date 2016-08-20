@@ -1,7 +1,8 @@
-sa77.github.io
-==============
+array101.github.io
+==================
 
-jekyll powered static blog
+blog posts around ruby/rails 
 
-[link](http://sa77.github.io/ "Homepage")
+
+[array101_home](http://array101.github.io/ "array101 | home")
 
