@@ -8,8 +8,8 @@
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?">
 
     <title>
-    	{% if page.title %}
-    		{{ page.title }} | {{ page.heading }}
+    	{% if page.heading %}
+    		{{ site.title }} | {{ page.heading }}
     	{% else %}
     		{{ site.title }}
     	{% endif %}

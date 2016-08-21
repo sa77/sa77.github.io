@@ -1,8 +1,9 @@
 ---
 layout: post
-title:  "array101"
 heading:  "Quickstart: output redirection with file descriptors in linux"
-keywords: "linux, bash"
+categories: "blog"
+tags: ["linux", "bash"]
+published: true
 ---
 
 <p>
@@ -26,19 +27,19 @@ keywords: "linux, bash"
 	<li>
 		1. Redirect STDOUT of a command to a file.
 			{% highlight bash %}				
-				$ ls 1> file_list
+$ ls 1> file_list
 			{% endhighlight %}		
 			
 			even if we skip to mention file descriptor in our commands, it is defaulted to 1 (STDOUT)
 			{% highlight bash %}
-				$ ls > file_list
+$ ls > file_list
 			{% endhighlight %}
 	</li>
 
 	<li>
 		2. Redirect STDERR of a command to a file.
 			{% highlight bash %}
-				$ ls 2> file
+$ ls 2> file
 			{% endhighlight %}
 	</li>
 
