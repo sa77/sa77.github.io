@@ -1,0 +1,64 @@
+---
+layout: post
+title:  "array101"
+heading:  "Quickstart: output redirection with file descriptors in linux"
+keywords: "linux, bash"
+---
+
+<p>
+	A terminal shell in linux (bash, zsh) provides three standard file descriptors for any file in the filestystem.
+	<br/>
+
+	<ul>
+		<li><b>STDIN  :</b> standard input - file descriptor 0</li>
+		<li><b>STDOUT :</b> standard output - file descriptor 1</li>
+		<li><b>STDERR :</b> standard error - file descriptor 2</li>
+	</ul>
+</p>
+
+<p>
+	You can open more file descriptors (such as 3, 4, 5, ...), and you can close them. You can also copy file descriptors. And you can write to them and read from them.
+	<br/>
+	<br/>
+
+	That being said, let's see what we can do with the default file descriptors available for any file:
+	
+	<li>
+		1. Redirect STDOUT of a command to a file.
+			{% highlight bash %}				
+				$ ls 1> file_list
+			{% endhighlight %}		
+			
+			even if we skip to mention file descriptor in our commands, it is defaulted to 1 (STDOUT)
+			{% highlight bash %}
+				$ ls > file_list
+			{% endhighlight %}
+	</li>
+
+	<li>
+		2. Redirect STDERR of a command to a file.
+			{% highlight bash %}
+				$ ls 2> file
+			{% endhighlight %}
+	</li>
+
+	<li>
+		3. Redirect both STDOUT and STDERR to a file.
+		{% highlight bash %}
+$ ls -ltra &>file
+# another way to do it
+$ ls -ltra >&file
+		{% endhighlight %}
+	</li>
+
+	<li>
+		4. Redirect both (STDIN/STDOUT) to the same destination one after another.
+			{% highlight bash %}
+# STDOUT is redirected first, followed by STDERR
+$ ls -a >file 2>&1
+			{% endhighlight %}			
+	</li>
+</p>
+
+<p>This can be really handy if you're on console most of the time. Cheers !</p>
+
