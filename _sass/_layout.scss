@@ -21,16 +21,24 @@
 }
 
 .site-title {
-    font-size: 26px;
-    line-height: 56px;
-    letter-spacing: -1px;
-    margin-bottom: 0;
-    float: left;
+  padding: 10px 0px;
+  // line-height: 56px;
+  // letter-spacing: -1px;
+  margin-bottom: 0;
+  float: left;
+  white-space: normal;
 
-    &,
-    &:visited {
-        color: $grey-color-dark;
-    }
+  strong {
+    font-size: 1.8em;
+  }
+
+  div {
+    font-family: monospace;
+  }
+
+  &,&:visited {
+    color: $grey-color-dark;
+  }
 }
 
 .site-nav {

@@ -1,9 +1,9 @@
 # Site settings
 title: array101
 email: hello@array101.com
-description: blog posts around ruby/rails stuff
+description: linux/ruby/rails stuff
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://yourdomain.com" # the base hostname & protocol for your site
+url: "http://array101.github.com" # the base hostname & protocol for your site
 github_username:  array101
 
 # Build settings
