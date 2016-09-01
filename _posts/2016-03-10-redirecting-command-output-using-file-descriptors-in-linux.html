@@ -24,40 +24,45 @@ published: true
 
 	That being said, let's see what we can do with the default file descriptors available for any file:
 	
-	<li>
-		1. Redirect STDOUT of a command to a file.
-			{% highlight bash %}				
+	<li> 1. Redirect STDOUT of a command to a file.
+<p>
+{% highlight bash %}
 $ ls 1> file_list
-			{% endhighlight %}		
-			
-			even if we skip to mention file descriptor in our commands, it is defaulted to 1 (STDOUT)
-			{% highlight bash %}
+{% endhighlight %}		
+<p>			
+even if we skip to mention file descriptor in our commands, it is defaulted to 1 (STDOUT)
+<p>
+{% highlight bash %}
 $ ls > file_list
-			{% endhighlight %}
+{% endhighlight %}
+</p>
 	</li>
 
-	<li>
-		2. Redirect STDERR of a command to a file.
-			{% highlight bash %}
+	<li> 2. Redirect STDERR of a command to a file.
+<p>	
+{% highlight bash %}
 $ ls 2> file
-			{% endhighlight %}
+{% endhighlight %}
+</p>
 	</li>
 
-	<li>
-		3. Redirect both STDOUT and STDERR to a file.
-		{% highlight bash %}
+	<li> 3. Redirect both STDOUT and STDERR to a file.
+<p>
+{% highlight bash %}
 $ ls -ltra &>file
 # another way to do it
 $ ls -ltra >&file
-		{% endhighlight %}
+{% endhighlight %}
+</p>
 	</li>
 
-	<li>
-		4. Redirect both (STDIN/STDOUT) to the same destination one after another.
-			{% highlight bash %}
+	<li> 4. Redirect both STDOUT and STDERR to the same destination one after another.
+<p>
+{% highlight bash %}
 # STDOUT is redirected first, followed by STDERR
 $ ls -a >file 2>&1
-			{% endhighlight %}			
+{% endhighlight %}
+</p>
 	</li>
 </p>
 
