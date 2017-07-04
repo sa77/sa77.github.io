@@ -74,11 +74,12 @@ $ rails new awesome-app
 <i>bash/zsh console</i>
 <p>
 {% highlight bash %}
-# this installs postgres binary(server) and psql (client)
-$ sudo apt-get install postgresql postgresql-contrib
+# this installs postgres binary(server), psql (client) and libpq-dev (allows gem 'pg' to connect to postgres server)
+$ sudo apt-get install postgresql postgresql-contrib libpq-dev
 
 # default user `postgres` is created upon installation, to create other users and add access rights to them
 # login as user postgres to add/remove users
+$ sudo su
 $ su - postgres
 
 # login to default role template (template1) generated on postgres installation
@@ -99,7 +100,7 @@ template1=# alter role array101 with login;
 # now you can login as 'array101' as a superuser into your postgresSQL server
 # for working with rails, it is recommended to create user 'devuser' with password 'devuser'
 template1=# create role devuser superuser;
-template1=# \passwd devuser;
+template1=# \password devuser;
 # type password (for example 'devuser') twice and exit
 template1=# \q
 # exit from postgres user (ctrl + D) or type exit in your linux console and hit enter
