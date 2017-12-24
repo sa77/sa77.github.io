@@ -10,5 +10,5 @@ github_username:  array101
 # Build settings
 markdown: redcarpet
 
-gems:
+plugins:
 - jekyll-feed
