@@ -1,21 +1,29 @@
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width initial-scale=1" />
-    <meta name="description" content="{{ site.description }}" />
-    <meta name="author" content="array101" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TLV654W');</script>
+<!-- End Google Tag Manager -->
 
-    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width initial-scale=1" />
+<meta name="description" content="{{ site.description }}" />
+<meta name="author" content="array101" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="{{ site.description }}">
 
-    <title>
-    	{% if page.heading %}
-    		{{ site.title }} | {{ page.heading }}
-    	{% else %}
-    		{{ site.title }}
-    	{% endif %}
-    </title>
-    <meta name="description" content="{{ site.description }}">
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?">
 
-    <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
-    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-</head>
+<title>
+  {% if page.heading %}
+    {{ site.title }} | {{ page.heading }}
+  {% else %}
+    {{ site.title }}
+  {% endif %}
+</title>
+
+<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+<link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+
