@@ -1,4 +1,4 @@
-source 'http://rubygems.org'
+source "http://rubygems.org"
 
-gem 'github-pages'
-
+gem "jekyll"
+gem "github-pages", "~> 204", group: :jekyll_plugins
