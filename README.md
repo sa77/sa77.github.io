@@ -1,8 +1,8 @@
 array101.github.io
 ==================
 
-blog posts around ruby/rails 
+random posts - mostly software things
 
 
-[array101_home](http://array101.github.io/ "array101 | home")
+[home](http://array101.github.io/ "array101 | home")
 

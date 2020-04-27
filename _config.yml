@@ -1,7 +1,7 @@
 # Site settings
 title: array101
+description: random dev posts
 email: hello@array101.com
-description: random dev stuff
 permalink: /blog/:year/:title.html
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://array101.github.com" # the base hostname & protocol for your site
@@ -13,4 +13,3 @@ markdown: redcarpet
 plugins:
 - jekyll-feed
 
-theme: jekyll-theme-modernist
