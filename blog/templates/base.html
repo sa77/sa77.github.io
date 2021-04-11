@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-TLV654W');</script>
+        <!-- End Google Tag Manager -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta name="description" content="{{ config.description }}" />
+    <meta name="author" content="array101" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="{{ config.description }}">
+
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?">
+
+    <title>{% block title %}{{ config.title }}{% endblock title %}</title>
+
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ config.base_url }}main.css">
+    <link rel="canonical" href="{{ config.base_url }}">
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TLV654W" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <header class="site-header">
+        <div class="wrapper">
+            <a class="site-title" href="{{ config.base_url }}">
+                <div><strong> {{ config.title }} </strong></div>
+                <div>{{ config.description }}</div>
+            </a>
+        </div>
+    </header>
+
+
+    <div class="page-content">
+        <div class="wrapper">
+            {% block content %}{% endblock content %}
+        </div>
+        <ul style="text-align: center;">
+            <li><a href="{{ config.base_url }}tags">Tags</a></li>
+            <!-- <li><a href="{{ config.base_url }}glossary">Glossary</a></li> -->
+        </ul>
+    </div>
+
+    <footer class="site-footer">
+        <div class="wrapper">
+            <ul class='social-media-list'>
+                {% if config.github_username %}
+                <li>
+                    <a href="https://github.com/{{ config.extras.github_username }}">
+                        <span><i class='fa fa-2x fa-github-square'></i></span>
+                        {{ config.extras.github_username }}
+                    </a>
+                </li>
+                {% endif %}
+            </ul>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

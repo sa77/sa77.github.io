@@ -1,0 +1,18 @@
+{% import "post_macros.html" as post_macros %}
+{% extends "base.html" %}
+{% block title %}{{ config.title }}{% endblock title %}
+
+{% block content %}
+<!-- <h1>{{ section.title }} </h1> -->
+
+<ol style="list-style: none;">
+  {% for page in section.pages %}
+    <li>
+      <h2>
+        <a class="post-link" href="{{ page.permalink | safe }}">{{ page.title }}</a>
+        <span class="post-meta">{{ post_macros::meta(page=page) }}</span>
+      </h2>
+    </li>
+  {% endfor %}
+</ol>
+{% endblock content %}
