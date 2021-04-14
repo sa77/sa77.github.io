@@ -5,7 +5,7 @@ layout = "page.html"
 date = 2020-09-02
 draft = false
 [taxonomies]
-tags = ["javascript", "typescript", "es6"]
+tags = ["javascript", "es6"]
 +++
 
 **Arrays** are one of the fundamental data structures supported in most programming environments out-of-the box (you can even use an array in ASSEMBLY). Often times, a collection of built-in array methods are provided by the language itself. This is a compilation of those in modern JavaScript (ES6).

@@ -5,7 +5,7 @@ layout = "page.html"
 date = 2018-12-01
 draft = false
 [taxonomies]
-tags = ["UNIX", "linux", "shell", "terminal"]
+tags = ["cli", "terminal"]
 +++
 
 `find` command is one of those commands which is available in almost every terminal shell of a linux/UNIX based operating system.

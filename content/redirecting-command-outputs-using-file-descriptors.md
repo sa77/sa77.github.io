@@ -5,7 +5,7 @@ layout = "page.html"
 date = 2016-03-10
 draft = false
 [taxonomies]
-tags = ["terminal", "bash"]
+tags = ["cli", "terminal"]
 +++
 
 A terminal shell (bash, zsh) in Unix-like systems provide three standard file descriptors for any file in the filesystem.

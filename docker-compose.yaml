@@ -1,0 +1,12 @@
+version: '3.9'
+
+services:
+    zola:
+        build: .
+        image: thibaultmorin/zola:0.13.0
+        container_name: zola-localhost
+        volumes:
+            - .:/app
+        ports:
+            - '1111:1111'
+        command: serve --interface 0.0.0.0

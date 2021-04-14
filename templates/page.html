@@ -16,7 +16,7 @@
             </p>
         </header>
         {{ page.content | safe }}
+        {% include "_disqus.html" %}
     {% endblock content %}
 </div>
 
-{% include "_disqus_integration.html" %}

@@ -1,7 +1,7 @@
 {% macro meta(page) %}
-    {% if page.date %} {{ page.date | date(format="%F") }} &mdash;{% endif %}
+    <!-- ref - https://docs.rs/crate/tera/0.10.4, https://docs.rs/chrono/0.4.7/chrono/format/strftime/index.html-->
+    {% if page.date %} {{ page.date | date(format="%d %b, %Y") }} &mdash;{% endif %}
     <span>{{ page.reading_time }} minute read</span>
-
 {% endmacro meta %}
 
 {% macro page_in_list(page) %}

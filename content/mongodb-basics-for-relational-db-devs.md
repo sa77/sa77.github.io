@@ -5,7 +5,7 @@ layout = "page.html"
 date = 2017-12-20
 draft = false
 [taxonomies]
-tags = ["nosql", "mongodb", "database"]
+tags = ["database", "nosql"]
 +++
 
 If you primarily work with postgreSQL (or any relational database systems) and have heard a lot of buzz regarding NoSQL databases and want to get started in one of those, here's a breif intro to get started on 'mongoDB' with one-one comparision with postgreSQL. It's one of the widely used NoSQL database (especially if you work with RESTful APIs).
