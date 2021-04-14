@@ -1,8 +1,7 @@
 array101.github.io
 ==================
 
-random posts - mostly software things
+random articles related to software, web, cloud, etc
 
-
-[home](http://array101.github.io/ "array101 | home")
+[array101 | home](http://array101.github.io/)
 
